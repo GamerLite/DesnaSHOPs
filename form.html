@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+ <head>
+    <script src="script.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>DesnaShop</title>
+ </head>
+ <body>
+    <style>
+        #forma{
+            font: bold;
+            font-size: 64px;
+        }
+        #geog{
+            color:darkorchid ;
+        }
+        html{
+            background-color: aqua;
+        }
+        body {
+           
+          margin: 0;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .aside, .main {
+          width: 100%;
+          min-height: 1px;
+        }
+        @media (min-width: 992px) {
+          .aside {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            order: 1;
+          }
+          .main {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+            order: 2;
+          }
+        }
+        @media (min-width: 1400px) {
+          .aside {
+            flex: 0 0 25%;
+            max-width: 25%;
+          }
+          .main {
+            flex: 0 0 75%;
+            max-width: 75%;
+            
+          
+        }
+</style>
+        
+        <div class="container">
+          <main class="main">
+            <center>
+                <a href="index.html"><img src="img/left_50px.png" alt="">
+                    <div>
+                        Обратно
+                    </div>
+                </a>
+                <p id="forma">
+                            Форма заказа
+                  <div id="forma">1.Имя, фамилия</div>
+                  <div id="forma">2.Номер телефона</div>
+                <div id="forma">  3.Номер домика</div>
+                <div id="forma">  4.Список</div>
+                </p>
+                <button id="geog" onclick=""><img src="img/geography_50px.png" alt="" >
+                    <div>
+                    
+                        Заказать
+                    </div>
+                </button>
+            </center>
+          </main>
+          <aside class="aside">
+            
+          </aside>
+        </div>
+        <script>
+            document.querySelector("#geog").onclick = function(){
+                window.open('mailto:egorkaje637@gmail.com?subject=subject&body=body');
+}
+            </script>
+ </body>
+</html>
